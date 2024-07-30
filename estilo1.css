@@ -1,0 +1,79 @@
+body {
+    background-image: url(template1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.main-title {
+    text-align: center;
+    width: 500px;
+    margin-top: 250px;
+    font-size: 32px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.list-wrapper {
+    width: 90%;
+    max-width: 600px;
+    max-height: 400px;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+}
+
+.list-item__image img {
+    width: 80px;
+    height: 80px;
+    padding-left: 10px;
+    border-radius: 50%;
+}
+
+.list-item {
+    padding:  10px 10px;
+    list-style-type: none;
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+    display: flex;
+
+}
+
+.list-item__content{
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.list-item__name {
+    font-weight: bolder;
+    color: rgb(40, 41, 43);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 24px;
+    margin: 0;
+}
+
+.list-item__bio {
+    color: rgb(160, 158, 158);
+    margin-top: 5px;
+}
+
+.list-item:hover {
+    background-color: #e8e8e8;
+}
+
+.list-item__interaction img {
+    max-width: 18px;
+    margin: 25% 10px 0;
+    opacity: 0;
+}
+
+.list-item:hover .list-item__interaction img{
+    opacity: .5;
+}
+
